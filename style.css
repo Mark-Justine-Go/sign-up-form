@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Bazinga';
+    src: url("./fonts/Bazinga-Regular.otf") format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ffa742;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+html,
+body,
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+}
+
+h3{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 30vh;
+    padding: 30px;
+}
+
+p{
+    padding: 30px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: 'Bazinga' ,'Times New Roman', Times, serif;
+    word-spacing: 3px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form > div{
+    display: flex;
+    gap: 30px;
+}
+
+input[type="text"],
+input[type="password"]{
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+button{
+    width: 20%;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #ff9100;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.form-container{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 30px;
+    -webkit-box-shadow: 1px 13px 15px -12px #000000; 
+    box-shadow: 1px 13px 15px -12px #000000;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left{
+    flex: 1;
+    background-image: url("./images/gigimurin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FDFBD4;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Bazinga' ,'Courier New', Courier, monospace;
+}
+
+.right{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.right p:last-child{
+    margin-top: -30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
